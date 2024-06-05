@@ -226,7 +226,7 @@ services:
       timeout: 10s
       retries: 3
       start_period: 1m
-    command: ["bash", "-c", "apt-get update && apt-get install -y python3-venv && mkdir -p /app/venv && python3 -m venv /app/venv && source /app/venv/bin/activate && pip install mrjob && tail -f /dev/null"]
+    command: ["bash", "-c", "apt-get update && apt-get install -y python3-venv && mkdir -p /app/venv && python3 -m venv /app/venv && source /appython/p/venv/bin/activate && pip install mrjob && tail -f /dev/null"]
 
   front:
     image: ${DOCKER_REG:-}httpd:2.4

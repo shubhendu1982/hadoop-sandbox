@@ -42,6 +42,6 @@ def run_mrjob(input_file, output_dir):
             os.remove('final_output.csv')
 
 if __name__ == '__main__':
-    input_file = 'hdfs:///test_data/input.csv'  # Your input HDFS CSV file
-    output_dir = 'hdfs:///output_data/'  # Your output HDFS directory
+    input_file = 'hdfs:///tmp/dominant_emotion/input.csv'  # Your input HDFS CSV file
+    output_dir = 'hdfs:///tmp/dominant_emotion/'  # Your output HDFS directory
     run_mrjob(input_file, output_dir)

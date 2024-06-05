@@ -1,15 +1,6 @@
 #hdfs dfs -put /tmp/input.csv /test_data/input.csv
 #hdfs dfs -get  /output_data/output_emotion.csv .
-
-######## run in local machine to upload input.csv to hdfc
-## Create virtual env
-python -m venv .venv && \                    
-   . .venv/bin/activate && \                                              
-   python -m pip install pywebhdfs 
-
-cd hdfs
-python ./listhdfs.py
-python ./upload.py
+#hadoop fs -ls 
 
 ######## Run In container clientnode
 
